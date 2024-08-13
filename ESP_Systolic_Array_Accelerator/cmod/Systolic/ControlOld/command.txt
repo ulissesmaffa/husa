@@ -1,0 +1,16 @@
+g++ -o sim_test -DHLS_ALGORITHMICC  -g -std=c++11 -Wall -Wno-unknown-pragmas -Wno-unused-variable -Wno-unused-label
+-L/home/ulisses/Downloads/systemc-2.3.1a/lib-linux64
+-L/home/ulisses/husa/catapult-comet
+-I/home/ulisses/husa/ESP_Systolic_Array_Accelerator/include
+-I/home/ulisses/husa/matchlib_connections/include
+-I/home/ulisses/Downloads/systemc-2.3.1a/include
+-I/home/ulisses/Downloads/systemc-2.3.1a/src
+-I/home/ulisses/husa/matchlib-hybrid_router/cmod/include
+-I/home/ulisses/Downloads/boost_1_55_0/libs
+-I/home/ulisses/Downloads/boost_1_55_0/
+-I/home/ulisses/husa/rapidjson/include/rapidjson
+-I/home/ulisses/husa/rapidjson
+-I/home/ulisses/husa/ac_types/include
+-I/home/ulisses/husa/ac_simutils/include
+-I/home/ulisses/husa/ac_math/include
+-DHLS_CATAPULT -DCONNECTIONS_ACCURATE_SIM -DSC_INCLUDE_DYNAMIC_PROCESSES testbench.cpp -lsystemc -lpthread
