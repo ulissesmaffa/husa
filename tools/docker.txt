@@ -1,0 +1,2 @@
+docker pull ulissesmaffa/husa:husa
+docker run -it ulissesmaffa/husa /bin/bash
